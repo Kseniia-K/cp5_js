@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="logo" style="background-image: url();"></div>
+        <div class="cardNumber"></div>
+        <div class="expDate">06/23</div>
+        <div class="cardholderInfo"></div>
+        <div class="payingSystem"></div>
+    </div>
+    <form>
+        <table class="formTable">
+            <tr>
+                <td><label>Введите номер карты</label></td>
+                <td><input type="number" name="fillNum" placeholder="0000 0000 0000 0000" class="cardNum"></td>
+            </tr>
+            <tr>
+                <td><label>Введите фамилию и имя владельца карты</label></td>
+                <td><input type="text" name="cardholder" placeholder="MR. CARDHOLDER" class="cardholderName"></td>
+            </tr>
+            <tr>
+                <td><label>Введите дату истечения срока действия карты</label></td>
+                <td><input type="month" class="date" min="2023-06" value="2023-06"></td>
+            </tr>
+            <tr>
+                <td><label>Выберите платежную систему</label></td>
+                <td>
+                    <select name="paySys" class="paySys">
+                        <option>VISA</option>
+                        <option>MASTER CARD</option>
+                        <option>MIR</option>
+                        <option>MAESTRO</option>
+                        <option>UNION PAY</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Выберите банк</label></td>
+                <td>
+                    <select name="bankName" class="bankName">
+                        <option>Сбербанк</option>
+                        <option>Тинькофф</option>
+                        <option>Альфа банк</option>
+                        <option>ВТБ</option>
+                        <option>Почта банк</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdButton"><button type="submit" class="btn">Отправить</button></td>
+            </tr>
+        </table>
+    </form>
+    <table class="table">
+        <tr class="trTable">
+            <td class="tdTable">Номер карты</td>
+            <td class="tdTable">Владелец карты</td>
+            <td class="tdTable">Срок действия</td>
+            <td class="tdTable">Платежная система</td>
+            <td class="tdTable">Название банка</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
